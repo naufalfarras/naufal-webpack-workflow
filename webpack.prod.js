@@ -26,7 +26,15 @@ module.exports = merge(common, {
                   loader: 'postcss-loader',
                   options: {
                      ident: 'postcss',
-                     plugins: [require('tailwindcss')(), require('autoprefixer')(), require('cssnano')()]
+                     plugins: [
+                        require('tailwindcss')(),
+                        require('autoprefixer')(),
+                        require('@fullhuman/postcss-purgecss')({
+                           content: ['./src/**/*.html'],
+                           defaultExtractor: content => content.match(/[\w-/:]+(?<!:)/g) || []
+                        }),
+                        require('cssnano')()
+                     ]
                   }
                },
                {
