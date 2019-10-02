@@ -1,10 +1,86 @@
 @import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
 
-@import './utils/utils';
+// Place Font Family Here
 
-body {
-   background: $primary;
-   font-family: 'Barlow Bold';
+@font-face {
+   font-family: 'Barlow';
+   src: url('../assets/fonts/Barlow/Barlow-Thin.ttf');
+   font-weight: 100;
 }
+@font-face {
+   font-family: 'Barlow';
+   src: url('../assets/fonts/Barlow/Barlow-ExtraLight.ttf');
+   font-weight: 200;
+}
+@font-face {
+   font-family: 'Barlow';
+   src: url('../assets/fonts/Barlow/Barlow-Light.ttf');
+   font-weight: 300;
+}
+@font-face {
+   font-family: 'Barlow';
+   src: url('../assets/fonts/Barlow/Barlow-Regular.ttf');
+   font-weight: 400;
+}
+
+@font-face {
+   font-family: 'Barlow';
+   src: url('../assets/fonts/Barlow/Barlow-Medium.ttf');
+   font-weight: 500;
+}
+
+@font-face {
+   font-family: 'Barlow';
+   src: url('../assets/fonts/Barlow/Barlow-SemiBold.ttf');
+   font-weight: 600;
+}
+
+@font-face {
+   font-family: 'Barlow';
+   src: url('../assets/fonts/Barlow/Barlow-Bold.ttf');
+   font-weight: 700;
+}
+
+@font-face {
+   font-family: 'Barlow';
+   src: url('../assets/fonts/Barlow/Barlow-ExtraBold.ttf');
+   font-weight: 800;
+}
+
+@font-face {
+   font-family: 'Barlow';
+   src: url('../assets/fonts/Barlow/Barlow-Black.ttf');
+   font-weight: 900;
+}
+
+h1 {
+   @apply text-5xl;
+}
+h2 {
+   @apply text-4xl;
+}
+h3 {
+   @apply text-3xl;
+}
+h4 {
+   @apply text-2xl;
+}
+h5 {
+   @apply text-xl;
+}
+h6 {
+   @apply text-lg;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   font-weight: 600;
+}
+
+@import 'tailwindcss/components';
+
+@import 'tailwindcss/utilities';

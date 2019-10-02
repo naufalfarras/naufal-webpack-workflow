@@ -9,7 +9,12 @@ module.exports = {
       rules: [
          {
             test: /\.html$/,
-            use: ['html-loader']
+            use: {
+               loader: 'html-loader',
+               options: {
+                  interpolate: true
+               }
+            }
          },
          {
             test: /\.js$/,
