@@ -1,6 +1,6 @@
 @import 'tailwindcss/base';
 
-// Place Font Family Here
+// Add base style here, for example font family
 
 @font-face {
    font-family: 'Barlow';
@@ -22,37 +22,35 @@
    src: url('../assets/fonts/Barlow/Barlow-Regular.ttf');
    font-weight: 400;
 }
-
 @font-face {
    font-family: 'Barlow';
    src: url('../assets/fonts/Barlow/Barlow-Medium.ttf');
    font-weight: 500;
 }
-
 @font-face {
    font-family: 'Barlow';
    src: url('../assets/fonts/Barlow/Barlow-SemiBold.ttf');
    font-weight: 600;
 }
-
 @font-face {
    font-family: 'Barlow';
    src: url('../assets/fonts/Barlow/Barlow-Bold.ttf');
    font-weight: 700;
 }
-
 @font-face {
    font-family: 'Barlow';
    src: url('../assets/fonts/Barlow/Barlow-ExtraBold.ttf');
    font-weight: 800;
 }
-
 @font-face {
    font-family: 'Barlow';
    src: url('../assets/fonts/Barlow/Barlow-Black.ttf');
    font-weight: 900;
 }
-
+html,
+body {
+   @apply h-full;
+}
 h1 {
    @apply text-5xl;
 }
@@ -83,4 +81,14 @@ h6 {
 
 @import 'tailwindcss/components';
 
+// Add custom component styling for extraction here, for example
+// .main-footer {
+//    @apply bg-gray-400;
+// }
+
 @import 'tailwindcss/utilities';
+
+// Add custom utilities/class here that tailwind not provide, for example
+// .magenta-red {
+//    background: linear-gradient(to right, magenta, red);
+// }
