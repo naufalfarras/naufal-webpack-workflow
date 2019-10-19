@@ -7,5 +7,132 @@
       <title>Design System w/ Webpack & TailwindCSS</title>
       <meta name="description" content="This is TailwindCSS + Webpack Boilerplate" />
    </head>
-   <body></body>
+   <body class="bg-gray-200">
+      <div class="container">
+         <h4>Design System</h4>
+         <div class="flex flex-wrap -mx-2">
+            <div class="w-full md:w-1/2 px-2">
+               <div class="mb-4 rounded bg-white shadow-md">
+                  <div class="px-5 py-4 border-b">
+                     <h6 class="font-medium">State Colors</h6>
+                  </div>
+                  <div class="px-5 py-4">
+                     <h6 class="text-xs uppercase tracking-wide mb-2 text-gray-500">Common</h6>
+                     <div class="mb-5">
+                        <span class="inline-block text-xs font-semibold bg-green-200 text-green-500 py-2 px-3 rounded"
+                           >Success</span
+                        >
+                        <span class="inline-block text-xs font-semibold bg-red-200 text-red-500 py-2 px-3 rounded"
+                           >Danger</span
+                        >
+                        <span class="inline-block text-xs font-semibold bg-blue-200 text-blue-500 py-2 px-3 rounded"
+                           >Info</span
+                        >
+                        <span class="inline-block text-xs font-semibold bg-orange-200 text-orange-500 py-2 px-3 rounded"
+                           >Warning</span
+                        >
+                        <span class="inline-block text-xs font-semibold bg-gray-800 text-gray-200 py-2 px-3 rounded"
+                           >Dark</span
+                        >
+                        <span class="inline-block text-xs font-semibold bg-gray-200 text-gray-800 py-2 px-3 rounded"
+                           >Light</span
+                        >
+                     </div>
+                     <h6 class="text-xs uppercase tracking-wide mb-2 text-gray-500">Custom Theme</h6>
+                     <div>
+                        <span class="inline-block text-xs font-semibold bg-gray-800 text-gray-100 py-2 px-3 rounded"
+                           >Primary</span
+                        >
+                        <span class="inline-block text-xs font-semibold bg-gray-200 text-gray-800 py-2 px-3 rounded"
+                           >Secondary</span
+                        >
+                        <span class="inline-block text-xs font-semibold bg-gray-200 text-gray-800 py-2 px-3 rounded"
+                           >Tertiary</span
+                        >
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="w-full md:w-1/2 px-2">
+               <div class="mb-4 rounded bg-white shadow-md">
+                  <div class="px-5 py-4 border-b">
+                     <h6 class="font-medium">Button</h6>
+                  </div>
+                  <div class="px-5 py-4">
+                     <h6 class="text-xs uppercase tracking-wide mb-2 text-gray-500">Fill</h6>
+                     <div class="mb-5">
+                        <a
+                           href=""
+                           class="inline-block text-sm font-semibold bg-green-500 hover:bg-green-600 text-gray-200 py-2 px-4 shadow-lg rounded"
+                           >Success Button</a
+                        >
+                        <a
+                           href=""
+                           class="inline-block text-sm font-semibold bg-red-500 hover:bg-red-600 text-gray-200 py-2 px-4 shadow-lg rounded"
+                           >Danger Button</a
+                        >
+                        <a
+                           href=""
+                           class="inline-block text-sm font-semibold bg-blue-500 hover:bg-blue-600 text-gray-200 py-2 px-4 shadow-lg rounded"
+                           >Info Button</a
+                        >
+                        <a
+                           href=""
+                           class="inline-block text-sm font-semibold bg-orange-500 hover:bg-orange-600 text-gray-200 py-2 px-4 shadow-lg rounded"
+                           >Warning Button</a
+                        >
+                     </div>
+                     <h6 class="text-xs uppercase tracking-wide mb-2 text-gray-500">Outline</h6>
+                     <div>
+                        <a
+                           href=""
+                           class="inline-block text-sm font-semibold border border-green-500 hover:bg-green-500 text-green-500 hover:text-gray-200 py-2 px-4 rounded"
+                           >Success Button</a
+                        >
+                        <a
+                           href=""
+                           class="inline-block text-sm font-semibold border border-red-500 hover:bg-red-500 text-red-500 hover:text-gray-200 py-2 px-4 rounded"
+                           >Danger Button</a
+                        >
+                        <a
+                           href=""
+                           class="inline-block text-sm font-semibold border border-blue-500 hover:bg-blue-500 text-blue-500 hover:text-gray-200 py-2 px-4 rounded"
+                           >Info Button</a
+                        >
+                        <a
+                           href=""
+                           class="inline-block text-sm font-semibold border border-orange-500 hover:bg-orange-500 text-orange-500 hover:text-gray-200 py-2 px-4 rounded"
+                           >Warning Button</a
+                        >
+                     </div>
+                  </div>
+               </div>
+               <div class="mb-4 rounded bg-white shadow-md">
+                  <div class="px-5 py-4 border-b">
+                     <h6 class="font-medium">Alert</h6>
+                  </div>
+                  <div class="px-5 py-4">
+                     <span
+                        class="block text-sm font-medium bg-green-200 text-green-600 border-l-2 border-green-600 px-5 py-4 mb-2"
+                        >This is an example of Success alert!</span
+                     >
+                     <span
+                        class="block text-sm font-medium bg-red-200 text-red-600 border-l-2 border-red-600 px-5 py-4 mb-2"
+                        >This is an example of Danger alert!</span
+                     >
+                     <span
+                        class="block text-sm font-medium bg-blue-200 text-blue-600 border-l-2 border-blue-600 px-5 py-4 mb-2"
+                        >This is an example of Info alert!</span
+                     >
+                     <span
+                        class="flex justify-between text-sm font-medium bg-orange-200 text-orange-600 border-l-2 border-orange-600 px-5 py-4"
+                     >
+                        This is an example of Warning alert!
+                     </span>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </body>
 </html>
