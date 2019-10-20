@@ -52,3 +52,12 @@ h6 {
 // .magenta-red {
 //    background: linear-gradient(to right, magenta, red);
 // }
+
+.bg-gradient {
+   &-blue {
+      background: linear-gradient(to bottom right, theme('colors.indigo.600'), theme('colors.blue.300'));
+   }
+   &-orange {
+      background: linear-gradient(to bottom right, theme('colors.pink.600'), theme('colors.orange.400'));
+   }
+}

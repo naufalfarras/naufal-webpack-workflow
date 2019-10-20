@@ -1,2 +1,156 @@
-@import 'button';
-@import 'alert';
+// =====================================
+// =============== ALERT ===============
+// =====================================
+
+.alert {
+   @apply block max-w-xl px-5 py-4 rounded;
+}
+
+// =====================================
+// =============== BADGE ===============
+// =====================================
+
+.badge {
+   @apply inline-block text-xs font-semibold py-1 px-3 rounded-full;
+}
+
+// ======================================
+// =============== BUTTON ===============
+// ======================================
+
+.btn {
+   @apply inline-block text-sm font-semibold py-2 px-4 rounded shadow-md;
+   transition: all 200ms ease;
+   &-block {
+      @apply block text-center;
+   }
+   &:hover {
+      @apply shadow-lg;
+   }
+   &[class*='fill'] {
+      @apply text-white;
+   }
+   &[class*='outline'] {
+      @apply border shadow-none;
+      &:hover {
+         @apply text-gray-100;
+      }
+   }
+   &[class*='link'] {
+      @apply shadow-none;
+      &:hover {
+         transform: unset;
+      }
+   }
+   &-fill-success {
+      @apply bg-green-500;
+      &:hover {
+         @apply bg-green-600;
+      }
+      &:active {
+         @apply bg-green-700;
+      }
+   }
+   &-fill-danger {
+      @apply bg-red-500;
+      &:hover {
+         @apply bg-red-600;
+      }
+      &:active {
+         @apply bg-red-700;
+      }
+   }
+   &-fill-info {
+      @apply bg-blue-500;
+      &:hover {
+         @apply bg-blue-600;
+      }
+      &:active {
+         @apply bg-blue-700;
+      }
+   }
+   &-fill-warning {
+      @apply bg-orange-500;
+      &:hover {
+         @apply bg-orange-600;
+      }
+      &:active {
+         @apply bg-orange-700;
+      }
+   }
+   &-outline-success {
+      @apply border-green-500 text-green-500;
+      &:hover {
+         @apply bg-green-500;
+      }
+      &:active {
+         @apply bg-green-700;
+      }
+   }
+   &-outline-danger {
+      @apply border-red-500 text-red-500;
+      &:hover {
+         @apply bg-red-500;
+      }
+      &:active {
+         @apply bg-red-700;
+      }
+   }
+   &-outline-info {
+      @apply border-blue-500 text-blue-500;
+      &:hover {
+         @apply bg-blue-500;
+      }
+      &:active {
+         @apply bg-blue-700;
+      }
+   }
+   &-outline-warning {
+      @apply border-orange-500 text-orange-500;
+      &:hover {
+         @apply bg-orange-500;
+      }
+      &:active {
+         @apply bg-orange-700;
+      }
+   }
+   &-link-success {
+      @apply text-green-500;
+      &:hover {
+         @apply text-green-600;
+      }
+      &:active {
+         @apply bg-green-100;
+      }
+   }
+   &-link-danger {
+      @apply text-red-500;
+      &:hover {
+         @apply text-red-600;
+      }
+      &:active {
+         @apply bg-red-100;
+      }
+   }
+   &-link-info {
+      @apply text-blue-500;
+      &:hover {
+         @apply text-blue-600;
+      }
+      &:active {
+         @apply bg-blue-100;
+      }
+   }
+   &-link-warning {
+      @apply text-orange-500;
+      &:hover {
+         @apply text-orange-600;
+      }
+      &:active {
+         @apply bg-orange-100;
+      }
+   }
+   &:hover {
+      transform: translateY(-1px);
+   }
+}
