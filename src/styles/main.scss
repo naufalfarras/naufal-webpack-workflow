@@ -2,54 +2,12 @@
 
 // Add base style here, for example font family
 
-@font-face {
-   font-family: 'Barlow';
-   src: url('../assets/fonts/Barlow/Barlow-Thin.ttf');
-   font-weight: 100;
-}
-@font-face {
-   font-family: 'Barlow';
-   src: url('../assets/fonts/Barlow/Barlow-ExtraLight.ttf');
-   font-weight: 200;
-}
-@font-face {
-   font-family: 'Barlow';
-   src: url('../assets/fonts/Barlow/Barlow-Light.ttf');
-   font-weight: 300;
-}
-@font-face {
-   font-family: 'Barlow';
-   src: url('../assets/fonts/Barlow/Barlow-Regular.ttf');
-   font-weight: 400;
-}
-@font-face {
-   font-family: 'Barlow';
-   src: url('../assets/fonts/Barlow/Barlow-Medium.ttf');
-   font-weight: 500;
-}
-@font-face {
-   font-family: 'Barlow';
-   src: url('../assets/fonts/Barlow/Barlow-SemiBold.ttf');
-   font-weight: 600;
-}
-@font-face {
-   font-family: 'Barlow';
-   src: url('../assets/fonts/Barlow/Barlow-Bold.ttf');
-   font-weight: 700;
-}
-@font-face {
-   font-family: 'Barlow';
-   src: url('../assets/fonts/Barlow/Barlow-ExtraBold.ttf');
-   font-weight: 800;
-}
-@font-face {
-   font-family: 'Barlow';
-   src: url('../assets/fonts/Barlow/Barlow-Black.ttf');
-   font-weight: 900;
-}
+@import url('https://fonts.googleapis.com/css?family=Muli:200,300,400,600,700,800,900&display=swap');
+
 html,
 body {
    @apply h-full;
+   font-family: 'Muli', sans-serif;
 }
 h1 {
    @apply text-5xl;
@@ -76,8 +34,7 @@ h3,
 h4,
 h5,
 h6 {
-   font-weight: 600;
-   @apply text-gray-800;
+   @apply font-semibold text-gray-800;
 }
 
 @import 'tailwindcss/components';
@@ -87,7 +44,7 @@ h6 {
 //    @apply bg-gray-400;
 // }
 
-@import 'components/buttons';
+@import 'components/components';
 
 @import 'tailwindcss/utilities';
 
