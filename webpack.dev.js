@@ -1,4 +1,5 @@
 const path = require('path');
+const webpack = require('webpack');
 const common = require('./webpack.common');
 const merge = require('webpack-merge');
 
@@ -51,5 +52,10 @@ module.exports = merge(common, {
             }
          }
       ]
+   },
+   plugins: [new webpack.HotModuleReplacementPlugin()],
+   devServer: {
+      hot: true,
+      clientLogLevel: 'none'
    }
 });
