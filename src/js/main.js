@@ -1,8 +1,8 @@
 // Import Styling
 import '../styles/main.scss';
 
-// Import Vendor
-import './vendor';
+// Import packages from node_modules here
+// -------
 
-// Import Main Custom JavaScript
-import './App';
+// Custom JS Here
+console.log($(body));

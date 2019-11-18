@@ -26,7 +26,10 @@ module.exports = merge(common, {
                   options: {
                      ident: 'postcss',
                      sourceMap: true,
-                     plugins: [require('tailwindcss')(), require('autoprefixer')()]
+                     plugins: [
+                        require('tailwindcss')(),
+                        require('autoprefixer')()
+                     ]
                   }
                },
                {

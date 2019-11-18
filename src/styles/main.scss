@@ -37,9 +37,17 @@ h6 {
 
 .bg-gradient {
    &-blue {
-      background: linear-gradient(to bottom right, theme('colors.indigo.600'), theme('colors.blue.300'));
+      background: linear-gradient(
+         to bottom right,
+         theme('colors.indigo.600'),
+         theme('colors.blue.300')
+      );
    }
    &-orange {
-      background: linear-gradient(to bottom right, theme('colors.pink.600'), theme('colors.orange.400'));
+      background: linear-gradient(
+         to bottom right,
+         theme('colors.pink.600'),
+         theme('colors.orange.400')
+      );
    }
 }
