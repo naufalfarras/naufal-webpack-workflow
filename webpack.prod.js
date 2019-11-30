@@ -31,7 +31,8 @@ module.exports = merge(common, {
                         require('autoprefixer')(),
                         require('@fullhuman/postcss-purgecss')({
                            content: ['./src/**/*.html'],
-                           defaultExtractor: content => content.match(/[\w-/:]+(?<!:)/g) || []
+                           defaultExtractor: content =>
+                              content.match(/[\w-/:]+(?<!:)/g) || []
                         }),
                         require('cssnano')()
                      ]
@@ -53,7 +54,8 @@ module.exports = merge(common, {
                loader: 'file-loader',
                options: {
                   context: path.resolve(__dirname, 'src'),
-                  name: '[path][name]-[contentHash].[ext]'
+                  // name: '[path][name]-[contentHash].[ext]'
+                  name: '[path][name].[ext]'
                }
             }
          }
